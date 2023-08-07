@@ -1,0 +1,14 @@
+{
+  "name": "emprende_fullstack",
+  "version": "1.0.0",
+  "description": "ejemplo de desarrollo fullstack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Lucas Osacar",
+  "license": "ISC",
+  "devDependencies" {
+    "nodemon": "^3.0.1"
+  }
+}
