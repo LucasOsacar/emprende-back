@@ -8,7 +8,7 @@
   },
   "author": "Lucas Osacar",
   "license": "ISC",
-  "devDependencies" {
+  "devDependencies": {
     "nodemon": "^3.0.1"
   }
 }
