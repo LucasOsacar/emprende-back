@@ -1,10 +1,20 @@
 import { Router } from 'express';
-import { ping } from '../controllers/index.controller.js';
-import * as fs from 'fs';
+import { ping, index, guardar, tasks, actualizar, eliminar} from '../controllers/index.controller.js';
+
 
 const router = Router();
 
 router.get('/ping', ping);
+
+router.get('/', index);
+
+router.post('/task', guardar);
+
+router.get('/task', tasks);
+
+router.put('/task', actualizar);
+
+router.delete('/task/:id', eliminar);
 
 // router.get('/styles.css', style);
 

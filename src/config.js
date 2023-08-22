@@ -9,3 +9,7 @@ export const DB_PASSWORD = process.env.DB_PASSWORD || 'masterkey';
 export const DB_HOST = process.env.DB_HOST || 'localhost';
 export const DB_DATABASE = process.env.DB_DATABASE || 'companydb';
 export const DB_PORT = process.env.DB_PORT || 3306
+
+export const MONGODB_URL = process.env.MONGODB_URL || 'mongodb+srv://apptareas:WLp6Y4hh1wovMxnV@fullstack.rmgo0mk.mongodb.net/dev?retryWrites=true&w=majority';
+const MONGODB_pass = 'WLp6Y4hh1wovMxnV';
+const MONGODB_user = 'apptareas';

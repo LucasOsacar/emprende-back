@@ -14,7 +14,7 @@
 // });
 import express from 'express';
 import {PORT} from './config.js';
-import indexRoutes from './routes/index.routes.js';
+import router from './routes/index.routes.js';
 
 const app = express();
 
@@ -23,13 +23,14 @@ app.use(express.json());
 app.use(express.static('img'));
 app.use(express.static('styles'));
 app.use(express.static('view'));
+app.use(express.static('main'));
 
-app.use(indexRoutes);
+app.use(router);
 
-app.use((req, res, next) => {
-    res.status(404).json({
-        message: 'Endpoint not found'
-    });
-});
+// app.use((req, res, next) => {
+//     res.status(404).json({
+//         message: 'Endpoint not found'
+//     });
+// });
 
 app.listen(PORT);
