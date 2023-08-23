@@ -2,7 +2,7 @@ const input = document.getElementById('ingresar-tarea');
 const boton = document.querySelector('button');
 const listaDeTareas = document.getElementById('lista-de-tareas');
 
-const baseBackendUrl = "http://localhost:3000";
+const baseBackendUrl = window.origin;
 
 function crearItemTarea(name, completada, id) {
   let tareaNueva = document.createElement('div');
