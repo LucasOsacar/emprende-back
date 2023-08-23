@@ -3,6 +3,7 @@ const boton = document.querySelector('button');
 const listaDeTareas = document.getElementById('lista-de-tareas');
 
 const baseBackendUrl = window.origin;
+console.log({baseBackendUrl});
 
 function crearItemTarea(name, completada, id) {
   let tareaNueva = document.createElement('div');
